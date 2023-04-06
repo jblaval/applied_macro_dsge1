@@ -1,0 +1,10 @@
+% Simulate with the "correct" parameters => simulated data are stored in simult.mat, while parameters are stored 
+% in  model_simul/Output/model_simul_mode.mat
+
+constebt
+dynare model_simul
+
+% Test : change beta 
+constebeta = 0.5;
+
+dynare model_simul

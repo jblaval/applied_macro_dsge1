@@ -198,7 +198,7 @@ constelab=0;
 
 %% Added by JP to provide full calibration of model before estimation
 constepinf=0.7;
-constebeta=0.7420;
+constebeta=constebeta_mean; //let us see what happens when we change beta 
 ctrend=0.3982;
 
 model(linear); 
@@ -393,7 +393,7 @@ crr,0.8258,0.5,0.975,BETA_PDF,0.75,0.10;
 cry,0.0893,0.001,0.5,NORMAL_PDF,0.125,0.05;
 crdy,0.2239,0.001,0.5,NORMAL_PDF,0.125,0.05;
 constepinf,0.7,0.1,2.0,GAMMA_PDF,0.625,0.1;//20;
-constebeta,0.7420,0.01,2.0,GAMMA_PDF,0.25,0.1;//0.20;
+constebeta,constebeta_mean,0.01,2.0,GAMMA_PDF,0.25,0.1;//0.20;
 constelab,1.2918,-10.0,10.0,NORMAL_PDF,0.0,2.0;
 ctrend,0.3982,0.1,0.8,NORMAL_PDF,0.4,0.10;
 cgy,0.05,0.01,2.0,NORMAL_PDF,0.5,0.25;
@@ -402,17 +402,13 @@ end;
 
 check;
 
-// varobs dy dc dinve labobs pinfobs dw robs;
+varobs dy dc dinve labobs pinfobs dw robs;
 
 
 // Simulate the model (on a 1000 periods, 500 different simulations => those simulations are stored in a file "main_simul", to retrieve if needed)
-stoch_simul(order=1,irf=0,periods=1000,simul_replic=500);
+stoch_simul(order=1,irf=0,periods=1000);
 
-[endo] = oo_.endo_simul
-[exo] = oo_.exo_simul
-[ss] = [dy dc dinve labobs pinfobs dw robs]
-
-save('simul.mat', 'endo', 'ss')
+save('simul.mat', 'dc', 'dinve', 'dw', 'dy', 'labobs', 'pinfobs', 'robs')
 
 // Estimate the parameters of the model using the previous data (first without modifying the model to see how it works)
-estimation(optim=('MaxIter',500), mode_file=usmodel_shock_decomp_modedatafile = 'simul.mat', mh_replic=0);
+estimation(optim=('MaxIter',500), datafile = 'simul.mat', mh_replic=0);
