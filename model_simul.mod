@@ -406,4 +406,4 @@ varobs dy dc dinve labobs pinfobs dw robs;
 
 
 // Simulate the model (on 500 periods, 500 different simulations)
-stoch_simul(irf=0,periods=10,simul_replic=5, drop=0);
+stoch_simul(irf=0,periods=10000,simul_replic=50,drop=0);
