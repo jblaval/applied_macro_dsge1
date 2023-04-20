@@ -1,10 +1,16 @@
-% Simulate with the "correct" parameters => simulated data are stored in simult.mat, while parameters are stored 
-% in  model_simul/Output/model_simul_mode.mat
+%%% Main file to execute
 
-constebeta_mean = 0.7420;
+% Simulation 
+
 dynare model_simul
 
 
-% Test : change beta 
-constebeta_mean = 0.5;
-dynare model_simul
+% Store simulations
+
+[simul] = get_simul_replications(M_, options_);
+position = [4 5 6 1 3 7 2] // positions of (dy dc dinve labobs pinfobs dw robs)
+simul = simul([4 5 6 1 3 7 2],:,:);
+save('simul.mat', simul(position,:,:));
+
+dynare model_estim
+
