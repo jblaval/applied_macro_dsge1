@@ -1,0 +1,1286 @@
+Starting Dynare (version 5.3).
+Calling Dynare with arguments: none
+Starting preprocessing of the model file ...
+Substitution of endo leads >= 2: added 1 auxiliary variables and equations.
+Found 15 equation(s).
+Evaluating expressions...done
+Computing static model derivatives (order 1).
+Computing dynamic model derivatives (order 2).
+Processing outputs ...
+done
+Preprocessing completed.
+
+
+STEADY-STATE RESULTS:
+
+m                		 1.011
+P                		 2.25815
+c                		 0.447711
+e                		 1
+W                		 4.5959
+R                		 1.02121
+k                		 5.80122
+d                		 0.849425
+n                		 0.187216
+l                		 0.860425
+gy_obs           		 1.003
+gp_obs           		 1.00797
+y                		 0.580765
+dA               		 1.003
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+               0                0                0
+        3.88e-17        -3.88e-17                0
+             0.7              0.7                0
+          0.9467           0.9467                0
+           1.067            1.067                0
+       1.091e+15        1.091e+15                0
+        3.91e+17        -3.91e+17                0
+
+
+There are 3 eigenvalue(s) larger than 1 in modulus 
+for 3 forward-looking variable(s)
+
+The rank condition is verified.
+
+
+MODEL SUMMARY
+
+  Number of variables:         15
+  Number of stochastic shocks: 2
+  Number of state variables:   4
+  Number of jumpers:           3
+  Number of static variables:  9
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables         e_a       e_m
+e_a          0.000196  0.000000
+e_m          0.000000  0.000025
+
+POLICY AND TRANSITION FUNCTIONS
+                                   m               P               c               e               W               R               k               d               n               l          gy_obs          gp_obs               y              dA
+Constant                    1.011000        2.258696        0.447603        1.000000        4.596381        1.021199        5.801499        0.849902        0.187300        0.860902        1.003307        1.008213        0.580940        1.003005
+(correction)                       0        0.000542       -0.000107               0        0.000477       -0.000013        0.000283        0.000477        0.000084        0.000477        0.000303        0.000242        0.000175               0
+m(-1)                       0.700000        2.535643       -0.192739               0        3.079790        0.494949        0.155122       -0.206595       -0.018099        0.493405       -0.064965        2.128839       -0.037617               0
+k(-1)                              0       -0.203515        0.040350               0       -0.062798               0        0.946669       -0.062798       -0.011106       -0.062798        0.017191       -0.090843        0.009954               0
+y(-1)                              0               0               0               0               0               0               0               0               0               0       -1.727040               0               0               0
+P(-1)                              0               0               0               0               0               0               0               0               0               0               0       -0.446370               0               0
+e_a                                0        1.180637       -0.234078        1.000000        0.364308               0       -5.491829        0.364308        0.064428        0.364308        0.903277       -0.480971       -0.057745        1.003005
+e_m                         1.011000        3.662193       -0.278370               0        4.448097        0.714848        0.224041       -0.298382       -0.026140        0.712618       -0.093829        1.634692       -0.054329               0
+m(-1),m(-1)                -0.103858        0.186156        0.133523               0       -0.473786       -0.124839       -0.109526        0.013808        0.011835       -0.090049        0.041444        1.202614        0.023997               0
+k(-1),m(-1)                        0       -0.223383       -0.018390               0       -0.033382               0        0.018197       -0.033382        0.001291       -0.033382       -0.000332       -0.189566       -0.000192               0
+k(-1),k(-1)                        0        0.024911       -0.001302               0        0.005684               0       -0.000370        0.005684        0.000854        0.005684       -0.002889        0.011119       -0.001673               0
+y(-1),m(-1)                        0               0               0               0               0               0               0               0               0               0        0.111862               0               0               0
+y(-1),k(-1)                        0               0               0               0               0               0               0               0               0               0       -0.029600               0               0               0
+y(-1),y(-1)                        0               0               0               0               0               0               0               0               0               0        2.973732               0               0               0
+P(-1),m(-1)                        0               0               0               0               0               0               0               0               0               0               0       -0.942734               0               0
+P(-1),k(-1)                        0               0               0               0               0               0               0               0               0               0               0        0.040229               0               0
+P(-1),P(-1)                        0               0               0               0               0               0               0               0               0               0               0        0.197670               0               0
+e_a,e_a                            0        0.248024        0.073209        0.500000        0.009149               0        2.733449        0.009149       -0.003489        0.009149        0.354415        0.087696       -0.027422        0.501502
+e_m,e_a                            0        1.871641        0.154081               0        0.279698               0       -0.152469        0.279698       -0.010819        0.279698       -0.091045       -0.799248        0.001612               0
+e_m,e_m                     0.505500        3.004166        0.079688               0        2.188913        0.250197       -0.068437       -0.184327        0.006015        0.321173        0.019431        1.340969        0.011251               0
+m(-1),e_a                          0        1.295894        0.106683               0        0.193658               0       -0.105567        0.193658       -0.007491        0.193658       -0.063038       -1.029124        0.001116               0
+m(-1),e_m                   0.700000        4.160072        0.110350               0        3.031135        0.346465       -0.094770       -0.255250        0.008330        0.444750        0.026907        3.473836        0.015580               0
+k(-1),e_a                          0       -0.085508       -0.025239               0       -0.003154               0       -0.942371       -0.003154        0.001203       -0.003154        0.033518        0.052675        0.009454               0
+k(-1),e_m                          0       -0.322629       -0.026560               0       -0.048214               0        0.026282       -0.048214        0.001865       -0.048214       -0.000480       -0.144012       -0.000278               0
+y(-1),e_a                          0               0               0               0               0               0               0               0               0               0       -1.555323               0               0               0
+y(-1),e_m                          0               0               0               0               0               0               0               0               0               0        0.161560               0               0               0
+P(-1),e_a                          0               0               0               0               0               0               0               0               0               0               0        0.212993               0               0
+P(-1),e_m                          0               0               0               0               0               0               0               0               0               0               0       -0.723906               0               0
+
+You did not declare endogenous variables after the estimation/calib_smoother command.
+Initial value of the log posterior (or likelihood): 15770.1263
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0      10   -1.577013e+04    0.000e+00    3.134e+05
+    1      25   -1.639835e+04    0.000e+00    2.080e+05    2.322e-02
+    2      36   -1.643344e+04    0.000e+00    1.095e+05    2.158e-02
+    3      46   -1.703949e+04    0.000e+00    1.261e+05    8.033e-02
+    4      56   -1.782740e+04    0.000e+00    1.381e+05    5.676e-02
+    5      67   -1.834938e+04    0.000e+00    5.538e+04    1.982e-01
+    6      78   -1.877974e+04    0.000e+00    3.403e+05    2.186e-01
+    7      90   -1.887749e+04    0.000e+00    9.242e+04    9.818e-02
+    8     101   -1.900142e+04    0.000e+00    9.164e+04    2.571e-01
+    9     112   -1.901736e+04    0.000e+00    4.613e+04    1.294e-01
+   10     122   -1.906863e+04    0.000e+00    5.691e+04    1.642e-01
+   11     133   -1.910461e+04    0.000e+00    5.015e+04    3.899e-02
+   12     144   -1.911875e+04    0.000e+00    4.871e+04    2.667e-02
+   13     157   -1.912552e+04    0.000e+00    3.161e+04    1.062e-02
+   14     168   -1.912603e+04    0.000e+00    2.256e+04    2.074e-02
+   15     181   -1.912808e+04    0.000e+00    1.371e+04    3.225e-02
+   16     193   -1.912993e+04    0.000e+00    2.041e+04    2.113e-02
+   17     203   -1.913937e+04    0.000e+00    7.741e+03    9.948e-02
+   18     214   -1.914035e+04    0.000e+00    6.571e+03    1.463e-01
+   19     226   -1.914361e+04    0.000e+00    5.965e+03    7.217e-02
+   20     238   -1.914809e+04    0.000e+00    1.172e+04    4.372e-02
+   21     251   -1.914890e+04    0.000e+00    9.639e+03    3.782e-02
+   22     263   -1.914954e+04    0.000e+00    7.026e+03    4.843e-02
+   23     275   -1.914962e+04    0.000e+00    3.868e+03    1.374e-02
+   24     285   -1.915008e+04    0.000e+00    1.662e+03    1.936e-02
+   25     298   -1.915018e+04    0.000e+00    9.066e+02    4.885e-03
+   26     309   -1.915020e+04    0.000e+00    1.828e+03    1.100e-02
+   27     319   -1.915024e+04    0.000e+00    2.631e+02    6.480e-03
+   28     329   -1.915024e+04    0.000e+00    1.211e+01    7.283e-04
+   29     339   -1.915024e+04    0.000e+00    8.173e+00    5.048e-05
+   30     349   -1.915024e+04    0.000e+00    2.865e-01    3.256e-06
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+   31     359   -1.915024e+04    0.000e+00    1.368e+01    4.873e-04
+   32     369   -1.915024e+04    0.000e+00    1.522e+00    7.932e-05
+   33     379   -1.915024e+04    0.000e+00    2.023e-02    1.912e-06
+
+<a href = "matlab: helpview('optim','local_min_poss_with_constr','CSHelpWindow');">Local minimum possible. Constraints satisfied</a>.
+
+fmincon stopped because the <a href = "matlab: helpview('optim','norm_curr_step_simple_fminconip','CSHelpWindow');">size of the current step</a> is less than
+the value of the <a href = "matlab: helpview('optim','step_size_tol','CSHelpWindow');">step size tolerance</a> and constraints are 
+satisfied to within the value of the <a href = "matlab: helpview('optim','constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg({'optimlib:sqpLineSearch:Exit2basic','fmincon'},{'optimlib:sqpLineSearch:Exit2detailed','1.000000e-06','0.000000e+00','1.000000e-06'},true,true);;">stopping criteria details</a>>
+
+Final value of minus the log posterior (or likelihood):-19150.238273 
+
+RESULTS FROM POSTERIOR ESTIMATION
+parameters
+    prior mean     mode    s.d.  prior pstdev
+
+alp     0.3560   0.3510  0.0179   beta 0.0200 
+bet     0.9930   0.9924  0.0019   beta 0.0020 
+gam     0.0085   0.0032  0.0003   norm 0.0030 
+mst     1.0002   1.0113  0.0003   norm 0.0070 
+rho     0.1290   0.7057  0.0159   beta 0.1000 
+psi     0.6500   0.6705  0.0487   beta 0.0500 
+del     0.0100   0.0099  0.0034   beta 0.0050 
+
+standard deviation of shocks
+    prior mean     mode    s.d.  prior pstdev
+
+e_a     0.0354   0.0152  0.0007   invg    Inf 
+e_m     0.0089   0.0048  0.0001   invg    Inf 
+
+
+Log data density [Laplace approximation] is 19100.576171.
+
+Estimation::mcmc: Multiple chains mode.
+Estimation::mcmc: Old metropolis.log file successfully erased!
+Estimation::mcmc: Creation of a new metropolis.log file.
+Estimation::mcmc: Searching for initial values...
+Estimation::mcmc: Initial values found!
+
+Estimation::mcmc: Write details about the MCMC... Ok!
+Estimation::mcmc: Details about the MCMC are available in simple_example/metropolis\simple_example_mh_history_0.mat
+
+
+Estimation::mcmc: Number of mh files: 1 per block.
+Estimation::mcmc: Total number of generated files: 2.
+Estimation::mcmc: Total number of iterations: 3000.
+Estimation::mcmc: Current acceptance ratio per chain: 
+                                                       Chain  1: 76.9%
+                                                       Chain  2: 76%
+Estimation::mcmc: Total number of MH draws per chain: 3000.
+Estimation::mcmc: Total number of generated MH files: 1.
+Estimation::mcmc: I'll use mh-files 1 to 1.
+Estimation::mcmc: In MH-file number 1 I'll start at line 1501.
+Estimation::mcmc: Finally I keep 1500 draws per chain.
+
+
+
+MCMC Inefficiency factors per block
+Parameter       Block 1     Block 2
+SE_e_a           66.332     110.691
+SE_e_m           21.267      85.265
+alp             108.330      65.847
+bet              41.858      92.923
+gam              27.259      28.540
+mst              97.995     116.008
+rho              45.164      25.221
+psi              59.781      43.104
+del             162.441     159.143
+
+Estimation::mcmc::diagnostics: Univariate convergence diagnostic, Brooks and Gelman (1998):
+    Parameter 1...  Done! 
+    Parameter 2...  Done! 
+    Parameter 3...  Done! 
+    Parameter 4...  Done! 
+    Parameter 5...  Done! 
+    Parameter 6...  Done! 
+    Parameter 7...  Done! 
+    Parameter 8...  Done! 
+    Parameter 9...  Done! 
+
+Estimation::marginal density: I'm computing the posterior mean and covariance...  Done!
+Estimation::marginal density: I'm computing the posterior log marginal density (modified harmonic mean)... Done!
+
+
+ESTIMATION RESULTS
+
+Log data density is 19099.108053.
+
+parameters
+      prior mean   post. mean        90% HPD interval    prior       pstdev
+
+alp        0.356       0.3505      0.3231      0.3766     beta       0.0200
+bet        0.993       0.9917      0.9885      0.9944     beta       0.0020
+gam        0.009       0.0032      0.0029      0.0036     norm       0.0030
+mst        1.000       1.0113      1.0108      1.0118     norm       0.0070
+rho        0.129       0.6947      0.6740      0.7160     beta       0.1000
+psi        0.650       0.6862      0.6159      0.7494     beta       0.0500
+del        0.010       0.0133      0.0078      0.0202     beta       0.0050
+
+standard deviation of shocks
+      prior mean   post. mean        90% HPD interval    prior       pstdev
+
+e_a        0.035       0.0152      0.0141      0.0161     invg          Inf
+e_m        0.009       0.0048      0.0047      0.0050     invg          Inf
+
+You did not declare endogenous variables after the estimation/calib_smoother command.
+Initial value of the log posterior (or likelihood): 15843.6446
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0       9   -1.584364e+04    0.000e+00    3.206e+05
+    1      23   -1.647095e+04    0.000e+00    2.075e+05    2.319e-02
+    2      33   -1.647874e+04    0.000e+00    1.114e+05    2.448e-02
+    3      43   -1.815881e+04    0.000e+00    1.683e+05    2.469e-01
+    4      53   -1.857768e+04    0.000e+00    1.628e+05    1.057e-01
+    5      63   -1.905609e+04    0.000e+00    5.333e+04    1.853e-01
+    6      74   -1.908206e+04    0.000e+00    5.980e+04    3.811e-02
+    7      86   -1.908364e+04    0.000e+00    5.202e+04    1.387e-02
+    8      97   -1.909083e+04    0.000e+00    7.869e+04    8.208e-02
+    9     109   -1.910508e+04    0.000e+00    5.368e+04    2.918e-02
+   10     121   -1.910778e+04    0.000e+00    4.094e+04    2.740e-02
+   11     130   -1.911115e+04    0.000e+00    3.832e+04    3.861e-02
+   12     141   -1.911190e+04    0.000e+00    2.224e+04    6.992e-03
+   13     152   -1.911452e+04    0.000e+00    1.715e+04    2.587e-02
+   14     162   -1.911564e+04    0.000e+00    2.165e+04    1.598e-02
+   15     171   -1.912461e+04    0.000e+00    1.342e+04    2.711e-01
+   16     183   -1.912465e+04    0.000e+00    7.905e+03    4.591e-02
+   17     194   -1.912693e+04    0.000e+00    1.063e+04    5.407e-02
+   18     203   -1.913020e+04    0.000e+00    4.922e+03    3.102e-02
+   19     218   -1.913037e+04    0.000e+00    1.290e+03    2.561e-02
+   20     229   -1.913050e+04    0.000e+00    1.408e+03    1.067e-02
+   21     244   -1.913062e+04    0.000e+00    1.686e+03    1.101e-02
+   22     254   -1.913085e+04    0.000e+00    1.226e+03    6.284e-03
+   23     263   -1.913103e+04    0.000e+00    3.925e+02    3.721e-03
+   24     272   -1.913103e+04    0.000e+00    4.718e+01    8.581e-03
+   25     281   -1.913104e+04    0.000e+00    1.265e+01    4.532e-03
+   26     290   -1.913104e+04    0.000e+00    4.211e+00    1.669e-04
+   27     299   -1.913104e+04    0.000e+00    1.471e-01    1.417e-05
+   28     308   -1.913104e+04    0.000e+00    4.099e+00    7.779e-04
+   29     317   -1.913104e+04    0.000e+00    2.995e-01    1.699e-06
+   30     326   -1.913104e+04    0.000e+00    5.808e-02    2.545e-06
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+   31     335   -1.913104e+04    0.000e+00    6.082e-02    1.290e-06
+   32     344   -1.913104e+04    0.000e+00    2.472e-03    5.635e-07
+
+<a href = "matlab: helpview('optim','local_min_poss_with_constr','CSHelpWindow');">Local minimum possible. Constraints satisfied</a>.
+
+fmincon stopped because the <a href = "matlab: helpview('optim','norm_curr_step_simple_fminconip','CSHelpWindow');">size of the current step</a> is less than
+the value of the <a href = "matlab: helpview('optim','step_size_tol','CSHelpWindow');">step size tolerance</a> and constraints are 
+satisfied to within the value of the <a href = "matlab: helpview('optim','constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg({'optimlib:sqpLineSearch:Exit2basic','fmincon'},{'optimlib:sqpLineSearch:Exit2detailed','1.000000e-06','0.000000e+00','1.000000e-06'},true,true);;">stopping criteria details</a>>
+
+Final value of minus the log posterior (or likelihood):-19131.041785 
+
+RESULTS FROM POSTERIOR ESTIMATION
+parameters
+    prior mean     mode    s.d.  prior pstdev
+
+alp     0.3560   0.3952  0.0163   beta 0.0200 
+bet     0.9930   0.9915  0.0021   beta 0.0020 
+gam     0.0085   0.0032  0.0003   norm 0.0030 
+mst     1.0002   1.0112  0.0003   norm 0.0070 
+rho     0.1290   0.6780  0.0153   beta 0.1000 
+psi     0.6500   0.7273  0.0433   beta 0.0500 
+
+standard deviation of shocks
+    prior mean     mode    s.d.  prior pstdev
+
+e_a     0.0354   0.0169  0.0007   invg    Inf 
+e_m     0.0089   0.0051  0.0001   invg    Inf 
+
+
+Log data density [Laplace approximation] is 19086.449519.
+
+Estimation::mcmc: Multiple chains mode.
+Estimation::mcmc: Old mh-files successfully erased!
+Estimation::mcmc: Old metropolis.log file successfully erased!
+Estimation::mcmc: Creation of a new metropolis.log file.
+Estimation::mcmc: Searching for initial values...
+Estimation::mcmc: Initial values found!
+
+Estimation::mcmc: Write details about the MCMC... Ok!
+Estimation::mcmc: Details about the MCMC are available in simple_example/metropolis\simple_example_mh_history_0.mat
+
+
+Estimation::mcmc: Number of mh files: 1 per block.
+Estimation::mcmc: Total number of generated files: 2.
+Estimation::mcmc: Total number of iterations: 3000.
+Estimation::mcmc: Current acceptance ratio per chain: 
+                                                       Chain  1: 77.6%
+                                                       Chain  2: 78.9%
+Estimation::mcmc: Total number of MH draws per chain: 3000.
+Estimation::mcmc: Total number of generated MH files: 1.
+Estimation::mcmc: I'll use mh-files 1 to 1.
+Estimation::mcmc: In MH-file number 1 I'll start at line 1501.
+Estimation::mcmc: Finally I keep 1500 draws per chain.
+
+
+
+MCMC Inefficiency factors per block
+Parameter       Block 1     Block 2
+SE_e_a           45.741      56.428
+SE_e_m           16.421     222.118
+alp              38.044      81.158
+bet              17.571      64.452
+gam             123.289     163.015
+mst             110.093      52.790
+rho             117.770     183.052
+psi              21.763      50.474
+
+Estimation::mcmc::diagnostics: Univariate convergence diagnostic, Brooks and Gelman (1998):
+    Parameter 1...  Done! 
+    Parameter 2...  Done! 
+    Parameter 3...  Done! 
+    Parameter 4...  Done! 
+    Parameter 5...  Done! 
+    Parameter 6...  Done! 
+    Parameter 7...  Done! 
+    Parameter 8...  Done! 
+
+Estimation::marginal density: I'm computing the posterior mean and covariance...  Done!
+Estimation::marginal density: I'm computing the posterior log marginal density (modified harmonic mean)... Done!
+
+
+ESTIMATION RESULTS
+
+Log data density is 19085.564216.
+
+parameters
+      prior mean   post. mean        90% HPD interval    prior       pstdev
+
+alp        0.356       0.3961      0.3645      0.4203     beta       0.0200
+bet        0.993       0.9911      0.9877      0.9941     beta       0.0020
+gam        0.009       0.0032      0.0025      0.0037     norm       0.0030
+mst        1.000       1.0113      1.0107      1.0117     norm       0.0070
+rho        0.129       0.6764      0.6478      0.7010     beta       0.1000
+psi        0.650       0.7240      0.6636      0.7843     beta       0.0500
+
+standard deviation of shocks
+      prior mean   post. mean        90% HPD interval    prior       pstdev
+
+e_a        0.035       0.0170      0.0160      0.0181     invg          Inf
+e_m        0.009       0.0051      0.0050      0.0053     invg          Inf
+
+You did not declare endogenous variables after the estimation/calib_smoother command.
+Initial value of the log posterior (or likelihood): 15878.8223
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0       9   -1.587882e+04    0.000e+00    3.298e+05
+    1      23   -1.651311e+04    0.000e+00    2.061e+05    2.318e-02
+    2      33   -1.653856e+04    0.000e+00    1.113e+05    2.661e-02
+    3      43   -1.804485e+04    0.000e+00    1.735e+05    3.376e-01
+    4      53   -1.857665e+04    0.000e+00    1.082e+05    1.707e-01
+    5      63   -1.902486e+04    0.000e+00    4.653e+04    1.216e-01
+    6      79   -1.905016e+04    0.000e+00    1.177e+04    5.941e-03
+    7      89   -1.905362e+04    0.000e+00    1.494e+04    1.694e-02
+    8     101   -1.906270e+04    0.000e+00    2.851e+04    8.153e-02
+    9     112   -1.907915e+04    0.000e+00    3.281e+04    9.737e-02
+   10     123   -1.908904e+04    0.000e+00    7.202e+04    8.890e-02
+   11     133   -1.909117e+04    0.000e+00    6.749e+04    2.563e-02
+   12     144   -1.909235e+04    0.000e+00    7.735e+04    2.552e-02
+   13     155   -1.909440e+04    0.000e+00    5.990e+04    1.945e-02
+   14     166   -1.909441e+04    0.000e+00    4.357e+04    1.170e-02
+   15     183   -1.909442e+04    0.000e+00    2.922e+03    1.009e-03
+   16     193   -1.909445e+04    0.000e+00    3.816e+03    1.354e-03
+   17     203   -1.909467e+04    0.000e+00    1.320e+03    1.490e-02
+   18     215   -1.909468e+04    0.000e+00    8.185e+02    1.868e-02
+   19     234   -1.909472e+04    0.000e+00    2.334e+02    1.139e-04
+   20     244   -1.909472e+04    0.000e+00    4.742e+02    6.229e-04
+   21     253   -1.909473e+04    0.000e+00    5.226e+01    5.317e-03
+   22     262   -1.909474e+04    0.000e+00    3.822e+01    8.666e-04
+   23     271   -1.909474e+04    0.000e+00    1.835e+01    1.412e-04
+   24     280   -1.909474e+04    0.000e+00    1.480e+00    2.106e-05
+   25     289   -1.909474e+04    0.000e+00    9.442e+00    6.743e-04
+   26     298   -1.909474e+04    0.000e+00    2.250e+00    4.836e-05
+   27     307   -1.909474e+04    0.000e+00    2.946e-02    3.506e-06
+   28     316   -1.909474e+04    0.000e+00    1.177e+00    1.248e-04
+   29     325   -1.909474e+04    0.000e+00    4.000e-03    2.069e-06
+   30     334   -1.909474e+04    0.000e+00    6.153e-01    3.179e-05
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+   31     343   -1.909474e+04    0.000e+00    1.068e-02    1.619e-06
+   32     352   -1.909474e+04    0.000e+00    2.946e-01    2.177e-06
+   33     363   -1.909474e+04    0.000e+00    2.624e-01    1.105e-06
+
+<a href = "matlab: helpview('optim','local_min_poss_with_constr','CSHelpWindow');">Local minimum possible. Constraints satisfied</a>.
+
+fmincon stopped because the <a href = "matlab: helpview('optim','norm_curr_step_simple_fminconip','CSHelpWindow');">size of the current step</a> is less than
+the value of the <a href = "matlab: helpview('optim','step_size_tol','CSHelpWindow');">step size tolerance</a> and constraints are 
+satisfied to within the value of the <a href = "matlab: helpview('optim','constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg({'optimlib:sqpLineSearch:Exit2basic','fmincon'},{'optimlib:sqpLineSearch:Exit2detailed','1.000000e-06','0.000000e+00','1.000000e-06'},true,true);;">stopping criteria details</a>>
+
+Final value of minus the log posterior (or likelihood):-19094.736002 
+
+RESULTS FROM POSTERIOR ESTIMATION
+parameters
+    prior mean     mode    s.d.  prior pstdev
+
+alp     0.3560   0.4226  0.0158   beta 0.0200 
+bet     0.9930   0.9924  0.0021   beta 0.0020 
+gam     0.0085   0.0032  0.0003   norm 0.0030 
+mst     1.0002   1.0112  0.0003   norm 0.0070 
+rho     0.1290   0.6562  0.0153   beta 0.1000 
+psi     0.6500   0.7306  0.0430   beta 0.0500 
+
+standard deviation of shocks
+    prior mean     mode    s.d.  prior pstdev
+
+e_a     0.0354   0.0184  0.0007   invg    Inf 
+e_m     0.0089   0.0053  0.0001   invg    Inf 
+
+
+Log data density [Laplace approximation] is 19050.270428.
+
+Estimation::mcmc: Multiple chains mode.
+Estimation::mcmc: Old mh-files successfully erased!
+Estimation::mcmc: Old metropolis.log file successfully erased!
+Estimation::mcmc: Creation of a new metropolis.log file.
+Estimation::mcmc: Searching for initial values...
+Estimation::mcmc: Initial values found!
+
+Estimation::mcmc: Write details about the MCMC... Ok!
+Estimation::mcmc: Details about the MCMC are available in simple_example/metropolis\simple_example_mh_history_0.mat
+
+
+Estimation::mcmc: Number of mh files: 1 per block.
+Estimation::mcmc: Total number of generated files: 2.
+Estimation::mcmc: Total number of iterations: 3000.
+Estimation::mcmc: Current acceptance ratio per chain: 
+                                                       Chain  1: 78.0667%
+                                                       Chain  2: 79%
+Estimation::mcmc: Total number of MH draws per chain: 3000.
+Estimation::mcmc: Total number of generated MH files: 1.
+Estimation::mcmc: I'll use mh-files 1 to 1.
+Estimation::mcmc: In MH-file number 1 I'll start at line 1501.
+Estimation::mcmc: Finally I keep 1500 draws per chain.
+
+
+
+MCMC Inefficiency factors per block
+Parameter       Block 1     Block 2
+SE_e_a           64.584      60.197
+SE_e_m           29.542     244.063
+alp              35.585     100.502
+bet              17.136      23.270
+gam             135.045     178.562
+mst              93.912      45.906
+rho             127.629     153.237
+psi              40.924      57.417
+
+Estimation::mcmc::diagnostics: Univariate convergence diagnostic, Brooks and Gelman (1998):
+    Parameter 1...  Done! 
+    Parameter 2...  Done! 
+    Parameter 3...  Done! 
+    Parameter 4...  Done! 
+    Parameter 5...  Done! 
+    Parameter 6...  Done! 
+    Parameter 7...  Done! 
+    Parameter 8...  Done! 
+
+Estimation::marginal density: I'm computing the posterior mean and covariance...  Done!
+Estimation::marginal density: I'm computing the posterior log marginal density (modified harmonic mean)... Done!
+
+
+ESTIMATION RESULTS
+
+Log data density is 19048.967529.
+
+parameters
+      prior mean   post. mean        90% HPD interval    prior       pstdev
+
+alp        0.356       0.4237      0.3980      0.4514     beta       0.0200
+bet        0.993       0.9923      0.9894      0.9952     beta       0.0020
+gam        0.009       0.0033      0.0026      0.0038     norm       0.0030
+mst        1.000       1.0113      1.0107      1.0117     norm       0.0070
+rho        0.129       0.6548      0.6274      0.6814     beta       0.1000
+psi        0.650       0.7272      0.6720      0.7897     beta       0.0500
+
+standard deviation of shocks
+      prior mean   post. mean        90% HPD interval    prior       pstdev
+
+e_a        0.035       0.0185      0.0174      0.0195     invg          Inf
+e_m        0.009       0.0054      0.0052      0.0055     invg          Inf
+
+You did not declare endogenous variables after the estimation/calib_smoother command.
+Initial value of the log posterior (or likelihood): 15899.5636
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0       9   -1.589956e+04    0.000e+00    3.386e+05
+    1      23   -1.654135e+04    0.000e+00    2.047e+05    2.318e-02
+    2      33   -1.658465e+04    0.000e+00    1.110e+05    2.848e-02
+    3      43   -1.800924e+04    0.000e+00    1.713e+05    3.925e-01
+    4      53   -1.849027e+04    0.000e+00    1.142e+05    1.926e-01
+    5      63   -1.892241e+04    0.000e+00    1.159e+05    2.183e-01
+    6      75   -1.897221e+04    0.000e+00    8.161e+04    4.707e-02
+    7      86   -1.899567e+04    0.000e+00    6.348e+04    1.504e-02
+    8      98   -1.902808e+04    0.000e+00    5.830e+04    2.019e-02
+    9     110   -1.903042e+04    0.000e+00    5.272e+04    1.861e-02
+   10     120   -1.903534e+04    0.000e+00    3.632e+04    5.704e-02
+   11     132   -1.903764e+04    0.000e+00    2.600e+04    3.853e-02
+   12     144   -1.903929e+04    0.000e+00    3.119e+04    2.635e-02
+   13     155   -1.904446e+04    0.000e+00    2.401e+04    6.100e-02
+   14     165   -1.904913e+04    0.000e+00    1.984e+04    1.415e-01
+   15     180   -1.904976e+04    0.000e+00    6.076e+02    2.586e-02
+   16     198   -1.904990e+04    0.000e+00    4.114e+02    6.005e-03
+   17     209   -1.904990e+04    0.000e+00    1.778e+03    4.275e-03
+   18     222   -1.904992e+04    0.000e+00    2.602e+02    2.549e-03
+   19     234   -1.904993e+04    0.000e+00    2.041e+02    4.194e-03
+   20     246   -1.904993e+04    0.000e+00    3.829e+02    2.355e-03
+   21     259   -1.904993e+04    0.000e+00    3.932e+01    3.069e-03
+   22     271   -1.904993e+04    0.000e+00    3.171e+02    8.369e-04
+   23     280   -1.904994e+04    0.000e+00    2.152e+01    1.910e-03
+   24     289   -1.904994e+04    0.000e+00    1.557e+00    8.685e-05
+   25     298   -1.904994e+04    0.000e+00    4.872e+00    6.453e-04
+   26     307   -1.904994e+04    0.000e+00    2.697e-01    1.357e-05
+   27     316   -1.904994e+04    0.000e+00    2.000e-02    1.297e-06
+   28     325   -1.904994e+04    0.000e+00    2.252e+00    9.282e-05
+   29     334   -1.904994e+04    0.000e+00    3.705e-01    3.815e-05
+   30     343   -1.904994e+04    0.000e+00    5.633e-01    3.257e-05
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+   31     352   -1.904994e+04    0.000e+00    8.487e-02    7.262e-06
+   32     361   -1.904994e+04    0.000e+00    1.597e-02    2.878e-06
+   33     370   -1.904994e+04    0.000e+00    1.376e-02    1.335e-06
+
+<a href = "matlab: helpview('optim','local_min_poss_with_constr','CSHelpWindow');">Local minimum possible. Constraints satisfied</a>.
+
+fmincon stopped because the <a href = "matlab: helpview('optim','norm_curr_step_simple_fminconip','CSHelpWindow');">size of the current step</a> is less than
+the value of the <a href = "matlab: helpview('optim','step_size_tol','CSHelpWindow');">step size tolerance</a> and constraints are 
+satisfied to within the value of the <a href = "matlab: helpview('optim','constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg({'optimlib:sqpLineSearch:Exit2basic','fmincon'},{'optimlib:sqpLineSearch:Exit2detailed','1.000000e-06','0.000000e+00','1.000000e-06'},true,true);;">stopping criteria details</a>>
+
+Final value of minus the log posterior (or likelihood):-19049.937416 
+
+RESULTS FROM POSTERIOR ESTIMATION
+parameters
+    prior mean     mode    s.d.  prior pstdev
+
+alp     0.3560   0.4405  0.0155   beta 0.0200 
+bet     0.9930   0.9931  0.0019   beta 0.0020 
+gam     0.0085   0.0033  0.0004   norm 0.0030 
+mst     1.0002   1.0112  0.0003   norm 0.0070 
+rho     0.1290   0.6385  0.0154   beta 0.1000 
+psi     0.6500   0.7159  0.0447   beta 0.0500 
+
+standard deviation of shocks
+    prior mean     mode    s.d.  prior pstdev
+
+e_a     0.0354   0.0196  0.0007   invg    Inf 
+e_m     0.0089   0.0055  0.0001   invg    Inf 
+
+
+Log data density [Laplace approximation] is 19005.577415.
+
+Estimation::mcmc: Multiple chains mode.
+Estimation::mcmc: Old mh-files successfully erased!
+Estimation::mcmc: Old metropolis.log file successfully erased!
+Estimation::mcmc: Creation of a new metropolis.log file.
+Estimation::mcmc: Searching for initial values...
+Estimation::mcmc: Initial values found!
+
+Estimation::mcmc: Write details about the MCMC... Ok!
+Estimation::mcmc: Details about the MCMC are available in simple_example/metropolis\simple_example_mh_history_0.mat
+
+
+Estimation::mcmc: Number of mh files: 1 per block.
+Estimation::mcmc: Total number of generated files: 2.
+Estimation::mcmc: Total number of iterations: 3000.
+Estimation::mcmc: Current acceptance ratio per chain: 
+                                                       Chain  1: 78.1333%
+                                                       Chain  2: 78.7333%
+Estimation::mcmc: Total number of MH draws per chain: 3000.
+Estimation::mcmc: Total number of generated MH files: 1.
+Estimation::mcmc: I'll use mh-files 1 to 1.
+Estimation::mcmc: In MH-file number 1 I'll start at line 1501.
+Estimation::mcmc: Finally I keep 1500 draws per chain.
+
+
+
+MCMC Inefficiency factors per block
+Parameter       Block 1     Block 2
+SE_e_a           42.163      84.742
+SE_e_m           14.585     233.349
+alp              40.201     128.100
+bet              16.133      11.423
+gam             132.010     144.218
+mst              97.178      42.566
+rho             102.260     140.840
+psi              44.256      59.646
+
+Estimation::mcmc::diagnostics: Univariate convergence diagnostic, Brooks and Gelman (1998):
+    Parameter 1...  Done! 
+    Parameter 2...  Done! 
+    Parameter 3...  Done! 
+    Parameter 4...  Done! 
+    Parameter 5...  Done! 
+    Parameter 6...  Done! 
+    Parameter 7...  Done! 
+    Parameter 8...  Done! 
+
+Estimation::marginal density: I'm computing the posterior mean and covariance...  Done!
+Estimation::marginal density: I'm computing the posterior log marginal density (modified harmonic mean)... Done!
+
+
+ESTIMATION RESULTS
+
+Log data density is 19004.438054.
+
+parameters
+      prior mean   post. mean        90% HPD interval    prior       pstdev
+
+alp        0.356       0.4395      0.4149      0.4664     beta       0.0200
+bet        0.993       0.9929      0.9903      0.9956     beta       0.0020
+gam        0.009       0.0033      0.0027      0.0040     norm       0.0030
+mst        1.000       1.0113      1.0107      1.0117     norm       0.0070
+rho        0.129       0.6378      0.6113      0.6624     beta       0.1000
+psi        0.650       0.7122      0.6584      0.7808     beta       0.0500
+
+standard deviation of shocks
+      prior mean   post. mean        90% HPD interval    prior       pstdev
+
+e_a        0.035       0.0197      0.0187      0.0208     invg          Inf
+e_m        0.009       0.0056      0.0054      0.0058     invg          Inf
+
+You did not declare endogenous variables after the estimation/calib_smoother command.
+Initial value of the log posterior (or likelihood): 15913.4452
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0       9   -1.591345e+04    0.000e+00    3.472e+05
+    1      23   -1.656258e+04    0.000e+00    2.033e+05    2.318e-02
+    2      33   -1.662340e+04    0.000e+00    1.106e+05    3.014e-02
+    3      43   -1.784875e+04    0.000e+00    1.669e+05    3.889e-01
+    4      53   -1.840978e+04    0.000e+00    3.996e+04    1.921e-01
+    5      62   -1.885338e+04    0.000e+00    9.984e+04    2.493e-01
+    6      72   -1.885668e+04    0.000e+00    9.459e+04    1.801e-01
+    7      83   -1.891085e+04    0.000e+00    7.746e+04    1.870e-01
+    8      93   -1.896682e+04    0.000e+00    6.045e+04    7.802e-02
+    9     110   -1.897208e+04    0.000e+00    1.330e+04    1.713e-03
+   10     120   -1.897419e+04    0.000e+00    1.898e+04    1.469e-02
+   11     132   -1.897657e+04    0.000e+00    8.152e+03    5.876e-02
+   12     142   -1.898788e+04    0.000e+00    6.706e+03    2.015e-01
+   13     154   -1.899370e+04    0.000e+00    4.557e+03    3.499e-02
+   14     164   -1.899746e+04    0.000e+00    1.476e+04    4.004e-02
+   15     174   -1.899778e+04    0.000e+00    4.728e+03    1.705e-02
+   16     185   -1.899889e+04    0.000e+00    5.063e+03    2.116e-02
+   17     195   -1.899921e+04    0.000e+00    4.032e+03    1.887e-02
+   18     206   -1.899934e+04    0.000e+00    1.741e+03    9.846e-03
+   19     218   -1.899945e+04    0.000e+00    1.340e+03    4.471e-03
+   20     230   -1.899945e+04    0.000e+00    2.235e+03    3.398e-03
+   21     240   -1.899949e+04    0.000e+00    1.711e+02    3.437e-03
+   22     249   -1.899950e+04    0.000e+00    5.358e+01    1.723e-03
+   23     258   -1.899950e+04    0.000e+00    1.083e+00    1.814e-04
+   24     267   -1.899950e+04    0.000e+00    1.754e+00    7.361e-04
+   25     276   -1.899950e+04    0.000e+00    1.865e-01    6.955e-05
+   26     285   -1.899950e+04    0.000e+00    8.153e-02    7.836e-06
+   27     294   -1.899950e+04    0.000e+00    4.057e-01    1.398e-04
+   28     303   -1.899950e+04    0.000e+00    1.062e-01    3.076e-06
+
+<a href = "matlab: helpview('optim','feasible_better_objective','CSHelpWindow');">Feasible point with lower objective function value found</a>.
+
+
+<a href = "matlab: helpview('optim','local_min_poss_with_constr','CSHelpWindow');">Local minimum possible. Constraints satisfied</a>.
+
+fmincon stopped because the <a href = "matlab: helpview('optim','norm_curr_step_simple_fminconip','CSHelpWindow');">size of the current step</a> is less than
+the value of the <a href = "matlab: helpview('optim','step_size_tol','CSHelpWindow');">step size tolerance</a> and constraints are 
+satisfied to within the value of the <a href = "matlab: helpview('optim','constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg({'optimlib:sqpLineSearch:Exit2basic','fmincon'},{'optimlib:sqpLineSearch:Exit2detailed','1.000000e-06','0.000000e+00','1.000000e-06'},true,true);;">stopping criteria details</a>>
+
+Final value of minus the log posterior (or likelihood):-18999.496094 
+
+RESULTS FROM POSTERIOR ESTIMATION
+parameters
+    prior mean     mode    s.d.  prior pstdev
+
+alp     0.3560   0.4524  0.0153   beta 0.0200 
+bet     0.9930   0.9936  0.0018   beta 0.0020 
+gam     0.0085   0.0033  0.0004   norm 0.0030 
+mst     1.0002   1.0112  0.0003   norm 0.0070 
+rho     0.1290   0.6222  0.0157   beta 0.1000 
+psi     0.6500   0.6924  0.0471   beta 0.0500 
+
+standard deviation of shocks
+    prior mean     mode    s.d.  prior pstdev
+
+e_a     0.0354   0.0206  0.0007   invg    Inf 
+e_m     0.0089   0.0057  0.0001   invg    Inf 
+
+
+Log data density [Laplace approximation] is 18955.250283.
+
+Estimation::mcmc: Multiple chains mode.
+Estimation::mcmc: Old mh-files successfully erased!
+Estimation::mcmc: Old metropolis.log file successfully erased!
+Estimation::mcmc: Creation of a new metropolis.log file.
+Estimation::mcmc: Searching for initial values...
+Estimation::mcmc: Initial values found!
+
+Estimation::mcmc: Write details about the MCMC... Ok!
+Estimation::mcmc: Details about the MCMC are available in simple_example/metropolis\simple_example_mh_history_0.mat
+
+
+Estimation::mcmc: Number of mh files: 1 per block.
+Estimation::mcmc: Total number of generated files: 2.
+Estimation::mcmc: Total number of iterations: 3000.
+Estimation::mcmc: Current acceptance ratio per chain: 
+                                                       Chain  1: 78.4667%
+                                                       Chain  2: 78.9333%
+Estimation::mcmc: Total number of MH draws per chain: 3000.
+Estimation::mcmc: Total number of generated MH files: 1.
+Estimation::mcmc: I'll use mh-files 1 to 1.
+Estimation::mcmc: In MH-file number 1 I'll start at line 1501.
+Estimation::mcmc: Finally I keep 1500 draws per chain.
+
+
+
+MCMC Inefficiency factors per block
+Parameter       Block 1     Block 2
+SE_e_a           40.540      73.452
+SE_e_m           36.159     213.541
+alp              21.105     109.551
+bet              64.405      17.527
+gam              83.941     144.636
+mst             124.455      45.304
+rho             165.049     155.691
+psi              51.307      63.542
+
+Estimation::mcmc::diagnostics: Univariate convergence diagnostic, Brooks and Gelman (1998):
+    Parameter 1...  Done! 
+    Parameter 2...  Done! 
+    Parameter 3...  Done! 
+    Parameter 4...  Done! 
+    Parameter 5...  Done! 
+    Parameter 6...  Done! 
+    Parameter 7...  Done! 
+    Parameter 8...  Done! 
+
+Estimation::marginal density: I'm computing the posterior mean and covariance...  Done!
+Estimation::marginal density: I'm computing the posterior log marginal density (modified harmonic mean)... Done!
+
+
+ESTIMATION RESULTS
+
+Log data density is 18954.186167.
+
+parameters
+      prior mean   post. mean        90% HPD interval    prior       pstdev
+
+alp        0.356       0.4537      0.4265      0.4797     beta       0.0200
+bet        0.993       0.9933      0.9910      0.9957     beta       0.0020
+gam        0.009       0.0034      0.0027      0.0040     norm       0.0030
+mst        1.000       1.0113      1.0108      1.0118     norm       0.0070
+rho        0.129       0.6256      0.5976      0.6502     beta       0.1000
+psi        0.650       0.6918      0.6256      0.7545     beta       0.0500
+
+standard deviation of shocks
+      prior mean   post. mean        90% HPD interval    prior       pstdev
+
+e_a        0.035       0.0208      0.0197      0.0219     invg          Inf
+e_m        0.009       0.0058      0.0056      0.0060     invg          Inf
+
+You did not declare endogenous variables after the estimation/calib_smoother command.
+Initial value of the log posterior (or likelihood): 15922.3309
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0       9   -1.592233e+04    0.000e+00    3.555e+05
+    1      23   -1.657877e+04    0.000e+00    2.019e+05    2.319e-02
+    2      33   -1.665671e+04    0.000e+00    1.102e+05    3.165e-02
+    3      43   -1.776623e+04    0.000e+00    1.615e+05    3.867e-01
+    4      53   -1.831273e+04    0.000e+00    7.631e+04    1.917e-01
+    5      62   -1.872587e+04    0.000e+00    2.255e+04    1.427e-01
+    6      73   -1.876725e+04    0.000e+00    8.844e+04    1.628e-01
+    7      83   -1.879124e+04    0.000e+00    2.439e+05    2.213e-01
+    8      94   -1.884378e+04    0.000e+00    9.171e+04    5.363e-02
+    9     103   -1.890104e+04    0.000e+00    7.311e+04    4.063e-02
+   10     115   -1.891610e+04    0.000e+00    6.001e+04    1.844e-02
+   11     127   -1.892868e+04    0.000e+00    5.126e+04    2.066e-02
+   12     145   -1.893185e+04    0.000e+00    3.460e+03    1.091e-03
+   13     155   -1.893263e+04    0.000e+00    3.287e+03    4.419e-03
+   14     167   -1.893382e+04    0.000e+00    1.936e+04    5.460e-02
+   15     177   -1.893821e+04    0.000e+00    3.385e+03    1.872e-01
+   16     197   -1.893901e+04    0.000e+00    3.327e+03    5.776e-04
+   17     207   -1.893928e+04    0.000e+00    3.217e+03    3.232e-03
+   18     216   -1.894281e+04    0.000e+00    2.005e+03    5.010e-02
+   19     226   -1.894366e+04    0.000e+00    1.678e+03    3.895e-02
+   20     236   -1.894377e+04    0.000e+00    2.192e+03    2.243e-02
+   21     247   -1.894424e+04    0.000e+00    2.186e+03    2.565e-02
+   22     256   -1.894446e+04    0.000e+00    1.691e+03    1.515e-02
+   23     265   -1.894480e+04    0.000e+00    1.208e+03    1.761e-02
+   24     274   -1.894483e+04    0.000e+00    8.239e+01    5.229e-03
+   25     283   -1.894483e+04    0.000e+00    9.845e+01    7.310e-04
+   26     292   -1.894483e+04    0.000e+00    5.210e+01    1.265e-04
+   27     301   -1.894483e+04    0.000e+00    1.285e+00    7.239e-05
+   28     310   -1.894483e+04    0.000e+00    7.753e+00    7.393e-04
+   29     319   -1.894483e+04    0.000e+00    3.823e+00    5.285e-05
+   30     328   -1.894483e+04    0.000e+00    6.607e-01    1.693e-05
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+   31     337   -1.894483e+04    0.000e+00    6.861e-02    5.865e-06
+   32     346   -1.894483e+04    0.000e+00    2.280e+00    1.747e-04
+   33     355   -1.894483e+04    0.000e+00    1.040e-01    1.762e-05
+   34     364   -1.894483e+04    0.000e+00    4.000e-03    1.586e-06
+   35     373   -1.894483e+04    0.000e+00    1.989e-01    1.655e-05
+   36     382   -1.894483e+04    0.000e+00    3.895e-02    9.349e-06
+   37     391   -1.894483e+04    0.000e+00    3.041e-02    5.149e-06
+   38     400   -1.894483e+04    0.000e+00    8.434e-03    9.561e-07
+
+<a href = "matlab: helpview('optim','feasible_better_objective','CSHelpWindow');">Feasible point with lower objective function value found</a>.
+
+
+<a href = "matlab: helpview('optim','local_min_poss_with_constr','CSHelpWindow');">Local minimum possible. Constraints satisfied</a>.
+
+fmincon stopped because the <a href = "matlab: helpview('optim','norm_curr_step_simple_fminconip','CSHelpWindow');">size of the current step</a> is less than
+the value of the <a href = "matlab: helpview('optim','step_size_tol','CSHelpWindow');">step size tolerance</a> and constraints are 
+satisfied to within the value of the <a href = "matlab: helpview('optim','constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg({'optimlib:sqpLineSearch:Exit2basic','fmincon'},{'optimlib:sqpLineSearch:Exit2detailed','1.000000e-06','0.000000e+00','1.000000e-06'},true,true);;">stopping criteria details</a>>
+
+Final value of minus the log posterior (or likelihood):-18944.833544 
+
+RESULTS FROM POSTERIOR ESTIMATION
+parameters
+    prior mean     mode    s.d.  prior pstdev
+
+alp     0.3560   0.4594  0.0152   beta 0.0200 
+bet     0.9930   0.9939  0.0017   beta 0.0020 
+gam     0.0085   0.0034  0.0004   norm 0.0030 
+mst     1.0002   1.0112  0.0003   norm 0.0070 
+rho     0.1290   0.6062  0.0161   beta 0.1000 
+psi     0.6500   0.6620  0.0499   beta 0.0500 
+
+standard deviation of shocks
+    prior mean     mode    s.d.  prior pstdev
+
+e_a     0.0354   0.0214  0.0007   invg    Inf 
+e_m     0.0089   0.0059  0.0001   invg    Inf 
+
+
+Log data density [Laplace approximation] is 18900.703593.
+
+Estimation::mcmc: Multiple chains mode.
+Estimation::mcmc: Old mh-files successfully erased!
+Estimation::mcmc: Old metropolis.log file successfully erased!
+Estimation::mcmc: Creation of a new metropolis.log file.
+Estimation::mcmc: Searching for initial values...
+Estimation::mcmc: Initial values found!
+
+Estimation::mcmc: Write details about the MCMC... Ok!
+Estimation::mcmc: Details about the MCMC are available in simple_example/metropolis\simple_example_mh_history_0.mat
+
+
+Estimation::mcmc: Number of mh files: 1 per block.
+Estimation::mcmc: Total number of generated files: 2.
+Estimation::mcmc: Total number of iterations: 3000.
+Estimation::mcmc: Current acceptance ratio per chain: 
+                                                       Chain  1: 76.9333%
+                                                       Chain  2: 78.2333%
+Estimation::mcmc: Total number of MH draws per chain: 3000.
+Estimation::mcmc: Total number of generated MH files: 1.
+Estimation::mcmc: I'll use mh-files 1 to 1.
+Estimation::mcmc: In MH-file number 1 I'll start at line 1501.
+Estimation::mcmc: Finally I keep 1500 draws per chain.
+
+
+
+MCMC Inefficiency factors per block
+Parameter       Block 1     Block 2
+SE_e_a           49.943      28.161
+SE_e_m           60.071     149.348
+alp              28.779      10.654
+bet              71.184      31.914
+gam             122.202     176.455
+mst              12.809     136.568
+rho              48.182      21.141
+psi              35.237      59.326
+
+Estimation::mcmc::diagnostics: Univariate convergence diagnostic, Brooks and Gelman (1998):
+    Parameter 1...  Done! 
+    Parameter 2...  Done! 
+    Parameter 3...  Done! 
+    Parameter 4...  Done! 
+    Parameter 5...  Done! 
+    Parameter 6...  Done! 
+    Parameter 7...  Done! 
+    Parameter 8...  Done! 
+
+Estimation::marginal density: I'm computing the posterior mean and covariance...  Done!
+Estimation::marginal density: I'm computing the posterior log marginal density (modified harmonic mean)... Done!
+
+
+ESTIMATION RESULTS
+
+Log data density is 18899.719507.
+
+parameters
+      prior mean   post. mean        90% HPD interval    prior       pstdev
+
+alp        0.356       0.4632      0.4440      0.4835     beta       0.0200
+bet        0.993       0.9938      0.9913      0.9963     beta       0.0020
+gam        0.009       0.0034      0.0027      0.0041     norm       0.0030
+mst        1.000       1.0111      1.0107      1.0116     norm       0.0070
+rho        0.129       0.6099      0.5885      0.6376     beta       0.1000
+psi        0.650       0.6656      0.5981      0.7407     beta       0.0500
+
+standard deviation of shocks
+      prior mean   post. mean        90% HPD interval    prior       pstdev
+
+e_a        0.035       0.0217      0.0206      0.0226     invg          Inf
+e_m        0.009       0.0059      0.0058      0.0061     invg          Inf
+
+You did not declare endogenous variables after the estimation/calib_smoother command.
+Initial value of the log posterior (or likelihood): 15926.9424
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0       9   -1.592694e+04    0.000e+00    3.637e+05
+    1      23   -1.659083e+04    0.000e+00    2.006e+05    2.319e-02
+    2      33   -1.668548e+04    0.000e+00    1.098e+05    3.305e-02
+    3      43   -1.771768e+04    0.000e+00    1.565e+05    3.851e-01
+    4      53   -1.823424e+04    0.000e+00    8.693e+04    1.914e-01
+    5      62   -1.857093e+04    0.000e+00    3.913e+04    1.165e-01
+    6      73   -1.864286e+04    0.000e+00    4.999e+04    1.660e-01
+    7      83   -1.870581e+04    0.000e+00    2.327e+05    2.193e-01
+    8      94   -1.876759e+04    0.000e+00    7.647e+04    4.322e-02
+    9     103   -1.883383e+04    0.000e+00    7.285e+04    1.285e-01
+   10     115   -1.884913e+04    0.000e+00    5.853e+04    2.624e-02
+   11     126   -1.886089e+04    0.000e+00    3.564e+04    4.939e-02
+   12     137   -1.886216e+04    0.000e+00    4.341e+04    7.229e-02
+   13     148   -1.886600e+04    0.000e+00    5.085e+04    3.838e-02
+   14     158   -1.886958e+04    0.000e+00    2.394e+04    5.633e-02
+   15     169   -1.887086e+04    0.000e+00    2.608e+04    1.903e-02
+   16     181   -1.887621e+04    0.000e+00    3.449e+04    6.513e-02
+   17     190   -1.888601e+04    0.000e+00    8.796e+03    1.265e-01
+   18     205   -1.888622e+04    0.000e+00    7.155e+02    6.194e-02
+   19     217   -1.888625e+04    0.000e+00    5.840e+03    1.423e-02
+   20     227   -1.888644e+04    0.000e+00    3.185e+03    3.977e-02
+   21     246   -1.888655e+04    0.000e+00    4.252e+02    2.416e-03
+   22     256   -1.888660e+04    0.000e+00    6.418e+02    1.423e-03
+   23     265   -1.888688e+04    0.000e+00    4.112e+02    1.104e-02
+   24     274   -1.888689e+04    0.000e+00    2.600e+02    1.803e-03
+   25     283   -1.888689e+04    0.000e+00    1.055e+02    4.084e-04
+   26     292   -1.888689e+04    0.000e+00    2.099e+01    1.021e-04
+   27     301   -1.888689e+04    0.000e+00    1.819e+01    5.644e-05
+   28     310   -1.888689e+04    0.000e+00    7.515e+00    4.120e-05
+   29     319   -1.888689e+04    0.000e+00    1.358e+00    1.402e-05
+   30     328   -1.888690e+04    0.000e+00    6.204e+00    7.411e-04
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+   31     337   -1.888690e+04    0.000e+00    1.086e+00    4.466e-05
+   32     346   -1.888690e+04    0.000e+00    8.891e-02    3.295e-06
+   33     355   -1.888690e+04    0.000e+00    1.035e-01    6.076e-06
+   34     364   -1.888690e+04    0.000e+00    2.000e-02    2.745e-06
+   35     373   -1.888690e+04    0.000e+00    3.841e-01    1.195e-04
+   36     382   -1.888690e+04    0.000e+00    1.078e-01    3.782e-05
+   37     391   -1.888690e+04    0.000e+00    1.181e-01    7.570e-05
+   38     400   -1.888690e+04    0.000e+00    1.750e-02    1.926e-05
+   39     409   -1.888690e+04    0.000e+00    5.049e-03    5.017e-06
+   40     418   -1.888690e+04    0.000e+00    4.000e-03    3.214e-06
+   41     427   -1.888690e+04    0.000e+00    1.550e-01    1.046e-04
+   42     436   -1.888690e+04    0.000e+00    1.198e-01    7.296e-05
+   43     445   -1.888690e+04    0.000e+00    3.410e-02    4.661e-06
+   44     454   -1.888690e+04    0.000e+00    1.786e-02    8.523e-06
+   45     463   -1.888690e+04    0.000e+00    1.918e-03    3.852e-06
+   46     475   -1.888690e+04    0.000e+00    4.359e-03    9.351e-07
+
+<a href = "matlab: helpview('optim','local_min_poss_with_constr','CSHelpWindow');">Local minimum possible. Constraints satisfied</a>.
+
+fmincon stopped because the <a href = "matlab: helpview('optim','norm_curr_step_simple_fminconip','CSHelpWindow');">size of the current step</a> is less than
+the value of the <a href = "matlab: helpview('optim','step_size_tol','CSHelpWindow');">step size tolerance</a> and constraints are 
+satisfied to within the value of the <a href = "matlab: helpview('optim','constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg({'optimlib:sqpLineSearch:Exit2basic','fmincon'},{'optimlib:sqpLineSearch:Exit2detailed','1.000000e-06','0.000000e+00','1.000000e-06'},true,true);;">stopping criteria details</a>>
+
+Final value of minus the log posterior (or likelihood):-18886.896205 
+
+RESULTS FROM POSTERIOR ESTIMATION
+parameters
+    prior mean     mode    s.d.  prior pstdev
+
+alp     0.3560   0.4620  0.0153   beta 0.0200 
+bet     0.9930   0.9941  0.0017   beta 0.0020 
+gam     0.0085   0.0035  0.0004   norm 0.0030 
+mst     1.0002   1.0112  0.0003   norm 0.0070 
+rho     0.1290   0.5897  0.0165   beta 0.1000 
+psi     0.6500   0.6247  0.0525   beta 0.0500 
+
+standard deviation of shocks
+    prior mean     mode    s.d.  prior pstdev
+
+e_a     0.0354   0.0221  0.0007   invg    Inf 
+e_m     0.0089   0.0061  0.0001   invg    Inf 
+
+
+Log data density [Laplace approximation] is 18842.874707.
+
+Estimation::mcmc: Multiple chains mode.
+Estimation::mcmc: Old mh-files successfully erased!
+Estimation::mcmc: Old metropolis.log file successfully erased!
+Estimation::mcmc: Creation of a new metropolis.log file.
+Estimation::mcmc: Searching for initial values...
+Estimation::mcmc: Initial values found!
+
+Estimation::mcmc: Write details about the MCMC... Ok!
+Estimation::mcmc: Details about the MCMC are available in simple_example/metropolis\simple_example_mh_history_0.mat
+
+
+Estimation::mcmc: Number of mh files: 1 per block.
+Estimation::mcmc: Total number of generated files: 2.
+Estimation::mcmc: Total number of iterations: 3000.
+Estimation::mcmc: Current acceptance ratio per chain: 
+                                                       Chain  1: 77.7667%
+                                                       Chain  2: 77.7%
+Estimation::mcmc: Total number of MH draws per chain: 3000.
+Estimation::mcmc: Total number of generated MH files: 1.
+Estimation::mcmc: I'll use mh-files 1 to 1.
+Estimation::mcmc: In MH-file number 1 I'll start at line 1501.
+Estimation::mcmc: Finally I keep 1500 draws per chain.
+
+
+
+MCMC Inefficiency factors per block
+Parameter       Block 1     Block 2
+SE_e_a          106.980      10.603
+SE_e_m           77.001     119.724
+alp              84.324      29.486
+bet              81.547      31.054
+gam              50.173      54.483
+mst             159.198     125.804
+rho              74.245      75.531
+psi              59.056      24.169
+
+Estimation::mcmc::diagnostics: Univariate convergence diagnostic, Brooks and Gelman (1998):
+    Parameter 1...  Done! 
+    Parameter 2...  Done! 
+    Parameter 3...  Done! 
+    Parameter 4...  Done! 
+    Parameter 5...  Done! 
+    Parameter 6...  Done! 
+    Parameter 7...  Done! 
+    Parameter 8...  Done! 
+
+Estimation::marginal density: I'm computing the posterior mean and covariance...  Done!
+Estimation::marginal density: I'm computing the posterior log marginal density (modified harmonic mean)... Done!
+
+
+ESTIMATION RESULTS
+
+Log data density is 18842.123884.
+
+parameters
+      prior mean   post. mean        90% HPD interval    prior       pstdev
+
+alp        0.356       0.4652      0.4422      0.4858     beta       0.0200
+bet        0.993       0.9936      0.9913      0.9960     beta       0.0020
+gam        0.009       0.0035      0.0030      0.0040     norm       0.0030
+mst        1.000       1.0111      1.0105      1.0117     norm       0.0070
+rho        0.129       0.5927      0.5698      0.6195     beta       0.1000
+psi        0.650       0.6340      0.5711      0.7113     beta       0.0500
+
+standard deviation of shocks
+      prior mean   post. mean        90% HPD interval    prior       pstdev
+
+e_a        0.035       0.0223      0.0211      0.0233     invg          Inf
+e_m        0.009       0.0061      0.0060      0.0063     invg          Inf
+
+You did not declare endogenous variables after the estimation/calib_smoother command.
+Initial value of the log posterior (or likelihood): 15927.6735
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+    0       9   -1.592767e+04    0.000e+00    3.718e+05
+    1      23   -1.659925e+04    0.000e+00    1.993e+05    2.319e-02
+    2      33   -1.671029e+04    0.000e+00    1.093e+05    3.437e-02
+    3      42   -1.696897e+04    0.000e+00    1.049e+06    7.678e-01
+    4      51   -1.811151e+04    0.000e+00    1.318e+05    2.154e-01
+    5      61   -1.848913e+04    0.000e+00    3.381e+05    3.936e-01
+    6      71   -1.867768e+04    0.000e+00    5.646e+04    5.442e-02
+    7      82   -1.875360e+04    0.000e+00    6.889e+04    5.579e-02
+    8      93   -1.876051e+04    0.000e+00    8.689e+04    6.894e-03
+    9     102   -1.876640e+04    0.000e+00    6.820e+04    2.543e-02
+   10     112   -1.877092e+04    0.000e+00    1.205e+05    2.695e-01
+   11     122   -1.877642e+04    0.000e+00    1.096e+05    5.888e-02
+   12     131   -1.878432e+04    0.000e+00    2.275e+04    2.099e-01
+   13     141   -1.880670e+04    0.000e+00    5.122e+04    2.729e-01
+   14     151   -1.881093e+04    0.000e+00    4.657e+04    6.291e-03
+   15     161   -1.881728e+04    0.000e+00    2.074e+04    8.806e-02
+   16     170   -1.881805e+04    0.000e+00    3.174e+04    6.191e-02
+   17     179   -1.882451e+04    0.000e+00    1.361e+04    1.856e-02
+   18     188   -1.882618e+04    0.000e+00    2.179e+03    8.526e-03
+   19     202   -1.882638e+04    0.000e+00    7.473e+02    3.654e-03
+   20     214   -1.882639e+04    0.000e+00    8.166e+02    3.678e-03
+   21     229   -1.882641e+04    0.000e+00    6.546e+01    2.663e-03
+   22     246   -1.882644e+04    0.000e+00    3.897e+02    6.346e-03
+   23     258   -1.882644e+04    0.000e+00    4.239e+02    1.772e-04
+   24     268   -1.882645e+04    0.000e+00    2.457e+02    4.678e-03
+   25     277   -1.882645e+04    0.000e+00    1.198e+02    1.329e-03
+   26     286   -1.882645e+04    0.000e+00    1.201e+02    2.668e-04
+   27     295   -1.882645e+04    0.000e+00    4.280e+01    8.213e-04
+   28     304   -1.882645e+04    0.000e+00    3.119e+01    1.326e-04
+   29     313   -1.882645e+04    0.000e+00    5.410e+00    4.175e-04
+   30     322   -1.882645e+04    0.000e+00    1.329e+00    2.334e-04
+
+                                            First-order      Norm of
+ Iter F-count            f(x)  Feasibility   optimality         step
+   31     331   -1.882645e+04    0.000e+00    1.181e+00    7.479e-05
+   32     340   -1.882645e+04    0.000e+00    1.699e-01    2.779e-06
+   33     351   -1.882645e+04    0.000e+00    1.780e-01    1.182e-06
+   34     360   -1.882645e+04    0.000e+00    2.000e-02    2.649e-07
+
+<a href = "matlab: helpview('optim','feasible_better_objective','CSHelpWindow');">Feasible point with lower objective function value found</a>.
+
+
+<a href = "matlab: helpview('optim','local_min_poss_with_constr','CSHelpWindow');">Local minimum possible. Constraints satisfied</a>.
+
+fmincon stopped because the <a href = "matlab: helpview('optim','norm_curr_step_simple_fminconip','CSHelpWindow');">size of the current step</a> is less than
+the value of the <a href = "matlab: helpview('optim','step_size_tol','CSHelpWindow');">step size tolerance</a> and constraints are 
+satisfied to within the value of the <a href = "matlab: helpview('optim','constraint_tolerance','CSHelpWindow');">constraint tolerance</a>.
+
+<<a href = "matlab: createExitMsg({'optimlib:sqpLineSearch:Exit2basic','fmincon'},{'optimlib:sqpLineSearch:Exit2detailed','1.000000e-06','0.000000e+00','1.000000e-06'},true,true);;">stopping criteria details</a>>
+
+Final value of minus the log posterior (or likelihood):-18826.453847 
+
+RESULTS FROM POSTERIOR ESTIMATION
+parameters
+    prior mean     mode    s.d.  prior pstdev
+
+alp     0.3560   0.4601  0.0154   beta 0.0200 
+bet     0.9930   0.9943  0.0016   beta 0.0020 
+gam     0.0085   0.0035  0.0004   norm 0.0030 
+mst     1.0002   1.0112  0.0003   norm 0.0070 
+rho     0.1290   0.5722  0.0170   beta 0.1000 
+psi     0.6500   0.5805  0.0545   beta 0.0500 
+
+standard deviation of shocks
+    prior mean     mode    s.d.  prior pstdev
+
+e_a     0.0354   0.0225  0.0007   invg    Inf 
+e_m     0.0089   0.0063  0.0001   invg    Inf 
+
+
+Log data density [Laplace approximation] is 18782.523640.
+
+Estimation::mcmc: Multiple chains mode.
+Estimation::mcmc: Old mh-files successfully erased!
+Estimation::mcmc: Old metropolis.log file successfully erased!
+Estimation::mcmc: Creation of a new metropolis.log file.
+Estimation::mcmc: Searching for initial values...
+Estimation::mcmc: Initial values found!
+
+Estimation::mcmc: Write details about the MCMC... Ok!
+Estimation::mcmc: Details about the MCMC are available in simple_example/metropolis\simple_example_mh_history_0.mat
+
+
+Estimation::mcmc: Number of mh files: 1 per block.
+Estimation::mcmc: Total number of generated files: 2.
+Estimation::mcmc: Total number of iterations: 3000.
+Estimation::mcmc: Current acceptance ratio per chain: 
+                                                       Chain  1: 78%
+                                                       Chain  2: 78.0667%
+Estimation::mcmc: Total number of MH draws per chain: 3000.
+Estimation::mcmc: Total number of generated MH files: 1.
+Estimation::mcmc: I'll use mh-files 1 to 1.
+Estimation::mcmc: In MH-file number 1 I'll start at line 1501.
+Estimation::mcmc: Finally I keep 1500 draws per chain.
+
+
+
+MCMC Inefficiency factors per block
+Parameter       Block 1     Block 2
+SE_e_a           46.712      80.857
+SE_e_m           23.619     148.661
+alp              58.034     118.637
+bet              66.956      53.466
+gam              64.579     157.421
+mst             182.741      56.105
+rho             131.076      87.766
+psi              32.838      69.814
+
+Estimation::mcmc::diagnostics: Univariate convergence diagnostic, Brooks and Gelman (1998):
+    Parameter 1...  Done! 
+    Parameter 2...  Done! 
+    Parameter 3...  Done! 
+    Parameter 4...  Done! 
+    Parameter 5...  Done! 
+    Parameter 6...  Done! 
+    Parameter 7...  Done! 
+    Parameter 8...  Done! 
+
+Estimation::marginal density: I'm computing the posterior mean and covariance...  Done!
+Estimation::marginal density: I'm computing the posterior log marginal density (modified harmonic mean)... Done!
+
+
+ESTIMATION RESULTS
+
+Log data density is 18781.018600.
+
+parameters
+      prior mean   post. mean        90% HPD interval    prior       pstdev
+
+alp        0.356       0.4586      0.4360      0.4829     beta       0.0200
+bet        0.993       0.9941      0.9917      0.9963     beta       0.0020
+gam        0.009       0.0034      0.0027      0.0040     norm       0.0030
+mst        1.000       1.0113      1.0108      1.0118     norm       0.0070
+rho        0.129       0.5705      0.5397      0.6010     beta       0.1000
+psi        0.650       0.5952      0.5204      0.6775     beta       0.0500
+
+standard deviation of shocks
+      prior mean   post. mean        90% HPD interval    prior       pstdev
+
+e_a        0.035       0.0225      0.0214      0.0236     invg          Inf
+e_m        0.009       0.0064      0.0062      0.0066     invg          Inf
+Delta = 0.05
+Alpha = 0.39613
+Gamma = 0.9911
+Beta = 0.0032035
+Rho = 0.67642
+Delta = 0.1
+Alpha = 0.42368
+Gamma = 0.9923
+Beta = 0.0032549
+Rho = 0.65484
+Delta = 0.15
+Alpha = 0.43954
+Gamma = 0.99294
+Beta = 0.0032629
+Rho = 0.63775
+Delta = 0.2
+Alpha = 0.45372
+Gamma = 0.99331
+Beta = 0.0033511
+Rho = 0.62556
+Delta = 0.25
+Alpha = 0.46321
+Gamma = 0.99382
+Beta = 0.0034033
+Rho = 0.60991
+Delta = 0.3
+Alpha = 0.46518
+Gamma = 0.99356
+Beta = 0.0034822
+Rho = 0.59273
+Delta = 0.35
+Alpha = 0.45858
+Gamma = 0.99407
+Beta = 0.0034427
+Rho = 0.57048
+Total computing time : 0h12m53s
