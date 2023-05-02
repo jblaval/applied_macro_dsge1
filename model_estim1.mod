@@ -362,42 +362,16 @@ end;
 estimated_params;
 // PARAM NAME, INITVAL, LB, UB, PRIOR_SHAPE, PRIOR_P1, PRIOR_P2, PRIOR_P3, PRIOR_P4, JSCALE
 // PRIOR_SHAPE: BETA_PDF, GAMMA_PDF, NORMAL_PDF, INV_GAMMA_PDF
-    stderr ea,0.4618,0.01,3,INV_GAMMA_PDF,0.1,2;
-    stderr eb,0.1818513,0.025,5,INV_GAMMA_PDF,0.1,2;
-    stderr eg,0.6090,0.01,3,INV_GAMMA_PDF,0.1,2;
-    stderr eqs,0.46017,0.01,3,INV_GAMMA_PDF,0.1,2;
-    stderr em,0.2397,0.01,3,INV_GAMMA_PDF,0.1,2;
-    stderr epinf,0.1455,0.01,3,INV_GAMMA_PDF,0.1,2;
-    stderr ew,0.2089,0.01,3,INV_GAMMA_PDF,0.1,2;
-    crhoa,.9676 ,.01,.9999,BETA_PDF,0.5,0.20;
-    crhob,.2703,.01,.9999,BETA_PDF,0.5,0.20;
-    crhog,.9930,.01,.9999,BETA_PDF,0.5,0.20;
-    crhoqs,.5724,.01,.9999,BETA_PDF,0.5,0.20;
-    crhoms,.3,.01,.9999,BETA_PDF,0.5,0.20;
-    crhopinf,.8692,.01,.9999,BETA_PDF,0.5,0.20;
-    crhow,.9546,.001,.9999,BETA_PDF,0.5,0.20;
-    cmap,.7652,0.01,.9999,BETA_PDF,0.5,0.2;
-    cmaw,.8936,0.01,.9999,BETA_PDF,0.5,0.2;
-    csadjcost,6.3325,2,15,NORMAL_PDF,4,1.5;
-    csigma,1.2312,0.25,3,NORMAL_PDF,1.50,0.375;
-    chabb,0.7205,0.001,0.99,BETA_PDF,0.7,0.1;
-    cprobw,0.7937,0.3,0.95,BETA_PDF,0.5,0.1;
-    csigl,2.8401,0.25,10,NORMAL_PDF,2,0.75;
-    cprobp,0.7813,0.5,0.95,BETA_PDF,0.5,0.10;
-    cindw,0.4425,0.01,0.99,BETA_PDF,0.5,0.15;
-    cindp,0.3291,0.01,0.99,BETA_PDF,0.5,0.15;
-    czcap,0.2648,0.01,1,BETA_PDF,0.5,0.15;
-    cfc,1.4672,1.0,3,NORMAL_PDF,1.25,0.125;
-    crpi,1.7985,1.0,3,NORMAL_PDF,1.5,0.25;
-    crr,0.8258,0.5,0.975,BETA_PDF,0.75,0.10;
-    cry,0.0893,0.001,0.5,NORMAL_PDF,0.125,0.05;
-    crdy,0.2239,0.001,0.5,NORMAL_PDF,0.125,0.05;
-    constepinf,0.7,0.1,2.0,GAMMA_PDF,0.625,0.1;//20;
-    constebeta,0.7420,0.01,2.0,GAMMA_PDF,0.25,0.1;//0.20;
-    constelab,1.2918,-10.0,10.0,NORMAL_PDF,0.0,2.0;
-    ctrend,0.3982,0.1,0.8,NORMAL_PDF,0.4,0.10;
-    cgy,0.05,0.01,2.0,NORMAL_PDF,0.5,0.25;
+
     calfa,0.24,0.01,1.0,NORMAL_PDF,0.3,0.05;
+    chabb,0.7205,0.001,0.99,BETA_PDF,0.7,0.1;
+    cindw,0.4425,0.01,0.99,BETA_PDF,0.5,0.15;
+    constebeta,0.7420,0.01,2.0,GAMMA_PDF,0.625,0.1;//0.2;
+    constepinf,0.7,0.1,2.0,GAMMA_PDF,0.625,0.1;//20;
+    crhoa,.9676 ,.01,.9999,BETA_PDF,0.5,0.20;
+    crhog,.9930,.01,.9999,BETA_PDF,0.5,0.20;
+    crr,0.8258,0.5,0.975,BETA_PDF,0.75,0.10;
+    ctrend,0.3982,0.1,0.8,NORMAL_PDF,0.4,0.10;
 end;
 
 check;
@@ -405,5 +379,22 @@ check;
 varobs dy dc dinve labobs pinfobs dw robs;
 
 
-// Simulate the model
-stoch_simul(irf=0,periods=1000,simul_replic=200);
+// Estimate the parameters of the model using the previous data (first without modifying the model to see how it works)
+// Optimal value of the scale parameter = 0.34798 (jscale)
+
+
+// estimation(datafile = 'simul.mat', mode_compute=6, mh_jscale=0.684);
+estimation(datafile = 'simul.mat', mode_compute=3);
+
+// estimation(datafile = 'simul.mat', mode_compute=6);
+
+results_simul(i).calfa = oo_.posterior_mean.parameters.calfa;
+results_simul(i).chabb = oo_.posterior_mean.parameters.chabb;
+results_simul(i).cindw = oo_.posterior_mean.parameters.cindw;
+results_simul(i).constebeta = oo_.posterior_mean.parameters.constebeta;
+results_simul(i).constepinf = oo_.posterior_mean.parameters.constepinf;
+results_simul(i).crhoa = oo_.posterior_mean.parameters.crhoa;
+results_simul(i).crhog = oo_.posterior_mean.parameters.crhog;
+results_simul(i).crr = oo_.posterior_mean.parameters.crr;
+results_simul(i).ctrend = oo_.posterior_mean.parameters.ctrend;
+
